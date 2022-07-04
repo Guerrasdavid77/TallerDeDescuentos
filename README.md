@@ -1,1 +1,1 @@
-# Taller-de-descuentos.
+# TallerDeDescuentos
