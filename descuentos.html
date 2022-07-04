@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./descuentos.css">
+    <title>Percentages and discounts</title>
+</head>
+<body>
+    <header>
+        <span class="icon"></span>
+        <div class="title">
+            <h1 class="title">PERCENTAGES AND DISCOUNT</h1>
+        </div>
+    </header>
+    <section>
+        <h2></h2>
+    </section>
+    <main class="container-discount">
+        <form class="card">
+            <span class="icon-buy"></span>
+            <label class="P-price" for="price">¿Cuál es el precio donde quiere aplicar el descuento?</label>
+            <input id="price" type="number">
+            <label class="P-discount" for="discount">¿Cuál es el precio donde quiere aplicar el descuento?</label>
+            <input id="discount" type="number">
+            <button type="button" onclick="priceDiscount()">Calcular el precio con descuento</button>
+            <input id="coupon" type="text">
+            <button type="button" onclick="priceDiscount2()">Calcular el cupón</button>
+            <div class="text1">
+                <p id="result"></p>
+            </div>
+        </form>
+    </main>
+
+
+
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

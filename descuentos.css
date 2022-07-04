@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+    background-color: rgb(77, 5, 77);
+}
+
+header{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(104, 39, 104);
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.icon{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+header .title{
+    color: white;
+    margin: auto;
+    text-shadow: rgb(120, 4, 120) -1px 0,
+    rgb(134, 1, 134) 0px 1px;
+    font-size: 1.5rem;
+    padding-right: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.card{
+    margin: 0 20px auto;
+    min-width: 320px;
+    height: 550px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+    display: grid;
+    box-shadow: -1px 1px 10px 5px violet;
+}
+
+.icon-buy{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url('./img/icons8-comprar.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
+.P-price, .P-discount, .P-coupon{
+    place-self: center;
+    font-size: 1rem;
+    text-align: justify;
+}
+.card input{
+    outline: none;
+    border: none;
+    background-color: rgb(252, 246, 246);
+    border-bottom: 1px solid rgb(215, 209, 209);
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    place-self: center;
+}
+
+.card button{
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    place-self: center;
+    font-weight: 700;
+    background-color: rgb(228, 145, 228);
+    box-shadow: 0px 0px 10px 0px rgb(91, 6, 91);
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: rgb(195, 96, 195);
+}
+
+.card p{
+    place-self: center;
+    font-size: 2rem;
+}
+
+.text1, .text2 {
+    min-width: 320px;
+    min-height: 50px;
+    text-align: center;
+}
+
+/*--------------------(>445px)-------------------- */
+
+@media only screen and (min-width: 445px){
+    .card{
+        max-width: 400px;
+        height: 600px;
+        display: grid;
+        margin: 0 auto;
+    }
+}
